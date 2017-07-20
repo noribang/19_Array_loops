@@ -42,5 +42,6 @@ var doubleNumbers = numbers.map(function(number) {
 });
 
 console.log(doubleNumbers);
+console.log("Original array: " + numbers);
 
 
