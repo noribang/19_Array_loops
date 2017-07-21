@@ -1,4 +1,6 @@
+/* ======================================== */
 /* 1. forEach() loops through each item in array languages */
+/* ======================================== */
 var languages = ['HTML', 'CSS', 'Javascript'];
 languages.forEach(function(language) {
 	console.log(language);
@@ -14,9 +16,8 @@ summands.forEach(function(summand) {
 })
 console.log("Total: " + total);
 
-/* ======================================== */
+
 /* Double every item in array. */
-/* ======================================== */
 var numbers = [1, 2, 3, 4, 5];
 
 var doubleNumbers = [];
@@ -27,11 +28,12 @@ numbers.forEach(function(number) {
 
 console.log(doubleNumbers);
 
+/* ======================================== */
 /* 3. .map() does not change original array but returns new array. */
 /* Loops through every item in array and does something to it. */
 /* ======================================== */
+
 /* Doubles every item in array. */
-/* ======================================== */
 var numbers = [1,2,3,4,5];
 var double; // or var double = [];
 
@@ -44,9 +46,11 @@ var doubleNumbers = numbers.map(function(number) {
 console.log(doubleNumbers);
 console.log("Original array: " + numbers);
 
+/* ======================================== */
 /* 4. for Loop */
 /* Syntax: for (initialization; condition; final expression) { 
 	               code to be executed}*/
+/* ======================================== */	               
 /* Example */
 for (var index = 1; index <= 3; index += 1) {
 	console.log("index = " + index);
@@ -68,7 +72,8 @@ summands.forEach(function(summand) {
 console.log("Total: " + total);
 
 /* ======================================== */
-/* Rewritten using For Loop */
+/* 4a. Rewritten using For Loop */
+/* Using For Loop to Add Numbers within array */
 /* ======================================== */
 var languages = ['HTML', 'CSS', 'Javascript'];
 for (var index = 0; index < languages.length; index += 1) {
@@ -87,7 +92,22 @@ for (var index = 0; index < summands.length; index += 1) {
 
 console.log(total);
 
+/* ======================================== */
+/* 4b. Using For Loop to Add Numbers w/out array */
+/* ======================================== */
+var total = 0;
+var totalBeforeIncrement;
+for (var currentNumber = 1; currentNumber <= 5; currentNumber += 1) {
+	console.log("currentNumber: " + currentNumber);
+	totalBeforeIncrement = total;
+	total += currentNumber;
+	console.log(totalBeforeIncrement + " + " + currentNumber + " = " + total);
+}
+console.log("Total = " + total);
+
+/* ======================================== */
 /* .length property */
+/* ======================================== */
 var languages = ['HTML', 'CSS', 'Javascript'];
 languages.length;
 3
@@ -95,6 +115,3 @@ languages.length;
 var school = "epicodus";
 school.length;
 8
-
-
-
