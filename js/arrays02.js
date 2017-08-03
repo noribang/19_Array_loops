@@ -6,6 +6,12 @@ languages.forEach(function(language) {
 	console.log(language);
 });
 
+var languages = ['HTML', 'CSS', 'Javascript'];
+for(var i = 0; i < languages.length; i++) {
+	var language = languages[i];
+	console.log(language);
+}
+
 /* 2. forEach() loops through each item in array summands and add to total */
 var total = 0;
 var summands = [1,2,3,4,5];
